@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="logo" href="/images/logo.png" type="image/x-icon">
+  <title>Portfolio - Olga Kublik</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="#home" class="logo">
+        <img src="/images/logo2.png" alt="logo">
+        Kublik
+      </a>
+      
+      <nav class="header_nav">
+        <a href="#home" class="header_link">Home</a>
+        <a href="#about" class="header_link">About</a>
+        <a href="#skills" class="header_link">Skills</a>
+        <a href="#projects" class="header_link">Projects</a>
+        <a href="#contact" class="header_link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="welcome">
+      <div class="container">
+        <div class="welcome_desc">
+          <h1 class="welcome_title">Hi, I'm Olga Kublik</h1>
+          <div class="welcome_desc">
+            <p class="welcome_subtitle">System Administrator & Programmer</p>
+            <p class="welcome_subtitle">I help businesses in software development, IT infrastructure, and network management.</p>
+          </div>
+          <div class="btn_group">
+            <a class="btn mail_btn" href="mailto:oliakublik@yandex.ru">oliakublik@yandex.ru</a>
+            <a download="" class="btn cv_btn" href="/CV_Kublik_Olga.pdf">download CV</a>
+          </div>
+        </div>
+        <div class="welcome_img" data-aos="fade-left">
+          <img src="/images/profile.png" alt="welcome_img">
+     </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <h2 class="title">About Me</h2>
+        <p>
+      I am a System Administrator and Programmer with hands-on experience in managing IT infrastructure,
+      deploying security solutions, and developing software. My background includes working with Windows
+      and Linux environments, Active Directory, and network administration.  
+    </p>
+    <p>
+      I also enjoy programming in <strong>C#, Python, JavaScript and HTML & CSS</strong>, creating console
+      applications, plugins, chatbots, and even 2D games in Unity. Currently, I am pursuing a Bachelor’s
+      degree in <strong>Information Technology in Design</strong> at Herzen State Pedagogical University.
+    </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+        <h2 class="title">Skills</h2>
+        <div class="skills_grid">
+          <div class="skill_card"><i data-lucide="code"></i> C#, Python, JavaScript, HTML & CSS</div>
+          <div class="skill_card"><i data-lucide="server"></i> Linux, Windows, Active Directory, GPO</div>
+          <div class="skill_card"><i data-lucide="shield"></i> DLP systems, Security Solutions</div>
+          <div class="skill_card"><i data-lucide="layers"></i> Docker, Git, VMware</div>
+          <div class="skill_card"><i data-lucide="gamepad-2"></i> Unity 2D, Game Dev</div>
+          <div class="skill_card"><i data-lucide="pen-tool"></i> Photoshop, Figma, Krita</div>
+        </div>
+      </div>
+    </section>
+
+     <section id="projects" class="projects">
+      <div class="container" data-aos="fade-up">
+        <h2 class="title">Projects</h2>
+        <div class="projects_grid">
+          <div class="project_card">
+            <div class="media_wrapper">
+              <img src="/images/vpn_app2.png" alt="project demo">
+            </div>
+            <h3>UI App</h3>
+            <p>Small app written in Python to help users set up a VPN.</p>
+            <a href="https://github.com/olkubik/vpn_app/blob/main/vpn.py">View on GitHub</a>
+          </div>
+
+          <div class="project_card">
+            <div class="media_wrapper">
+              <video class="project_video" autoplay muted loop playsinline>
+              <source src="/images/game.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+            </div>
+            <h3>2D Game</h3>
+            <p>Unity game prototype written in C# with basic mechanics.</p>
+            <a href="#">View on GitHub</a>
+          </div>
+
+          <div class="project_card">
+            <div class="media_wrapper">
+              <img src="/images/project3.png" alt="project demo">
+            </div>
+            <h3>Plugin</h3>
+            <p>Simple Plugin written in JavaScript for Mattermost.</p>
+            <a href="https://github.com/olkubik/plugin_a2b_link_mattermost/tree/main">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <h2 class="title">Contact</h2>
+        <p>If you'd like to collaborate or have any questions, feel free to reach out:</p>
+        <div class="contact_links">
+          <a href="mailto:oliakublik@yandex.ru"><i data-lucide="mail"></i> oliakublik@yandex.ru</a>
+          <a href="https://github.com/olkubik"><i data-lucide="github"></i> GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Olga Kublik. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
